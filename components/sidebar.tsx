@@ -37,10 +37,10 @@ const Sidebar = () => {
 
   return (
     <>
-      <nav className="fixed inset-y-0 w-64 py-4 px-2 bg-base-100">
+      <nav className="fixed inset-y-0 w-64 py-4 px-2 bg-base-100 border-e-2 rounded-r-2xl shadow-2xl">
         <div className="flex flex-col justify-center space-y-2">
-          <header className="mb-4 flex-start px-4">
-            <p className="text-3xl ">payroll</p>
+          <header className="mb-4 flex-start px-4 py-1.5 border-b-2">
+            <p className="text-2xl">payroll</p>
           </header>
           {sidebarItems.map(({ id, label, address, icon }) => {
             return (

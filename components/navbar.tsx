@@ -16,7 +16,7 @@ const Nav = (props: Props) => {
   const [dropdownToggle, setDropdownToggle] = useState(false)
 
   return (
-    <nav className="flex-between w-full h-14 md:h-16  shadow-lg py-2 px-5">
+    <nav className="flex-between w-full h-14 md:h-16  shadow-lg py-2 px-5 border-b-2">
       {/* <HamburgerButton /> */}
       <div
         className="w-9 h-9 md:w-10 md:h-10 border rounded-full flex-center transition duration-200
