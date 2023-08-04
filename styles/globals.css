@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #ffffff;
     --foreground: 222.2 84% 4.9%;
 
     --muted: 210 40% 96.1%;
@@ -37,8 +37,8 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: #010409;
+    --foreground: #f0f6fc;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -46,10 +46,10 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: #0d1117;
+    --card-foreground: #f0f6fc;
 
-    --border: 217.2 32.6% 17.5%;
+    --border: #363c44;
     --input: 217.2 32.6% 17.5%;
 
     --primary: 210 40% 98%;
@@ -88,3 +88,16 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+/* BORDER
+black: {
+    100: "#d7d8da",
+    200: "#afb1b4",
+    300: "#868a8f",
+    400: "#5e6369",
+    500: "#363c44",
+    600: "#2b3036",
+    700: "#202429",
+    800: "#16181b",
+    900: "#0b0c0e"
+}, */
