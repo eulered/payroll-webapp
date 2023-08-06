@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 import React, { cache } from 'react'
-import { Employee } from '@/models/Employee'
+import { Employee } from '@/lib/models/Employee'
 async function getData() {
   const res = await fetch('http://localhost:3000/api/employees/', {
     cache: 'no-store',

@@ -1,14 +1,24 @@
 import '@/styles/globals.css'
-import { Ubuntu } from 'next/font/google'
+import { Ubuntu, Roboto, Poppins } from 'next/font/google'
 
-import PageContent from '@/components/PageContent'
 import { ThemeProvider } from '@/components/theme-provider'
-import NavBar from '@/components/app-drawer'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   variable: '--font-ubuntu',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-poppins',
+})
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto',
 })
 
 export default function RootLayout({
@@ -18,12 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={`${ubuntu.variable} font-sans`}>
+      <body className={`${roboto.variable} ${poppins.variable} font-roboto`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NavBar />
-          <div className="flex">
-            <PageContent>{children}</PageContent>
-          </div>
+          <div className="flex-center p-0 m-0">{children}</div>
         </ThemeProvider>
       </body>
     </html>

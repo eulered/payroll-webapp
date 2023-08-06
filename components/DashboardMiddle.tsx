@@ -30,8 +30,10 @@ const DashboardMiddle = () => {
           <Card>
             <div>
               <header>
-                <p className="font-bold text-lg">Recent Requests</p>
-                <p className="font-medium text-sm text-slate-500">
+                <p className="font-medium text-lg font-poppins">
+                  Recent Requests
+                </p>
+                <p className="font-medium text-sm text-muted-foreground">
                   There are 3 recent requests
                 </p>
               </header>

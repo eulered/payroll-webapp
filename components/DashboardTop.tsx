@@ -13,7 +13,7 @@ const DashboardTop = () => {
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
           <Card>
             <div className="flex justify-between items-center mb-4">
-              <p>Employees Working</p>
+              <p className="font-poppins">Employees Working</p>
               <span className="text-xl">
                 <RiGroupLine />
               </span>
@@ -27,7 +27,7 @@ const DashboardTop = () => {
           </Card>
           <Card>
             <div className="flex justify-between items-center mb-4">
-              <p>Total Working Hours</p>
+              <p className="font-poppins">Total Working Hours</p>
               <span className="text-xl">
                 <RiTimeLine />
               </span>
@@ -41,7 +41,7 @@ const DashboardTop = () => {
           </Card>
           <Card>
             <div className="flex justify-between items-center mb-4">
-              <p>Total Overtime Hours</p>
+              <p className="font-poppins">Total Overtime Hours</p>
               <span className="text-xl">
                 <CgTimelapse />
               </span>
@@ -55,7 +55,7 @@ const DashboardTop = () => {
           </Card>
           <Card>
             <div className="flex justify-between items-center mb-4">
-              <p>Total Payroll</p>
+              <p className="font-poppins">Total Payroll</p>
               <span className="text-xl">
                 <TbCurrencyPeso />
               </span>

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -17,21 +18,23 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-ubuntu)', 'font-sans'],
+        sans: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
+        roboto: ['var(--font-roboto)', ...defaultTheme.fontFamily.sans],
+        poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        border: 'var(--border)',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        border: 'rgba(var(--border))',
+        input: 'rgba(var(--input))',
+        ring: 'rgba(var(--ring))',
+        background: 'rgba(var(--background))',
+        foreground: 'rgba(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'rgba(var(--primary))',
+          foreground: 'rgba(var(--primary-foreground))',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'rgba(var(--secondary))',
+          foreground: 'rgba(var(--secondary-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -39,10 +42,10 @@ module.exports = {
         },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          foreground: 'rgba(var(--muted-foreground))',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
+          DEFAULT: 'rgba(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
         popover: {
@@ -50,8 +53,8 @@ module.exports = {
           foreground: 'hsl(var(--popover-foreground))',
         },
         card: {
-          DEFAULT: 'var(--card)',
-          foreground: 'var(--card-foreground)',
+          DEFAULT: 'rgba(--card)',
+          foreground: 'rgba(--card-foreground)',
         },
       },
       borderRadius: {

@@ -24,7 +24,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">ID</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -45,7 +45,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-start gap-1">
           <div className="text-left">Employee</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -66,7 +66,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">Undertime</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -91,7 +91,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">Regular Hours</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -116,7 +116,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">Overtime</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -141,7 +141,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">NSD</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -166,7 +166,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">NSD Overtime</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -191,7 +191,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">Total</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
@@ -216,7 +216,7 @@ export const employeeTableColumns: ColumnDef<Employee>[] = [
         <div className="flex-center gap-1">
           <div className="text-center">Hourly Rate</div>
           <Button
-            className="py-1 px-1 hover:bg-transparent"
+            className="py-1 px-1 hover:bg-transparent hover:text-white"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
           >
