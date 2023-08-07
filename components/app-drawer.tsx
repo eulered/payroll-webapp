@@ -14,7 +14,7 @@ function NavBar() {
 
       <div className="daisy-drawer-side">
         <label htmlFor="sidebar" className="daisy-drawer-overlay"></label>
-        <Sidebar />
+        <Sidebar sidebarDrawer="sidebar" />
       </div>
     </div>
   )

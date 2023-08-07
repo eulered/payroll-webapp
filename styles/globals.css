@@ -10,11 +10,11 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 115, 115, 115, 1;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255, 255, 255, 1;
+    --popover-foreground: 17, 17, 17, 1;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 242, 242, 242, 1;
+    --card-foreground: 17, 17, 17, 1;
 
     --border: 211, 211, 211, 1;
     --input: 136, 136, 136, 1;
@@ -43,11 +43,11 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 161, 161, 161, 1;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 17, 17, 17, 1;
+    --popover-foreground: 255, 255, 255, 1;
 
     --card: 43, 43, 43, 1;
-    --card-foreground: #f0f6fc;
+    --card-foreground: 255, 255, 255, 1;
 
     --border: 43, 43, 43, 1;
     --input: 43, 43, 43, 1;
@@ -70,10 +70,27 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border box-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-y-auto;
+  }
+
+  main {
+    @apply overflow-y-auto;
+  }
+
+  main::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  main::-webkit-scrollbar-track {
+    @apply bg-background py-4 transition;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground rounded-full transition;
   }
 }
 

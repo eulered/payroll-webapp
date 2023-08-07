@@ -37,20 +37,20 @@ module.exports = {
           foreground: 'rgba(var(--secondary-foreground))',
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+          DEFAULT: 'rgba(var(--destructive))',
+          foreground: 'rgba(var(--destructive-foreground))',
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
+          DEFAULT: 'rgba(var(--muted))',
           foreground: 'rgba(var(--muted-foreground))',
         },
         accent: {
           DEFAULT: 'rgba(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          foreground: 'rgba(var(--accent-foreground))',
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
+          DEFAULT: 'rgba(var(--popover))',
+          foreground: 'rgba(var(--popover-foreground))',
         },
         card: {
           DEFAULT: 'rgba(--card)',

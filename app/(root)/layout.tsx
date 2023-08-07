@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import { Ubuntu, Roboto, Poppins } from 'next/font/google'
 
-import PageContent from '@/components/PageContent'
+import MainContent from '@/components/main-content'
 import { ThemeProvider } from '@/components/theme-provider'
 import NavBar from '@/components/app-drawer'
 
@@ -36,7 +36,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
           <div className="flex">
-            <PageContent>{children}</PageContent>
+            <MainContent>{children}</MainContent>
           </div>
         </ThemeProvider>
       </body>
